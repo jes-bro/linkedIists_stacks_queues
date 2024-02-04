@@ -112,6 +112,7 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
             return value
         }
     }
+    
     /**
      * Removes an element from the back of the list. If the list is empty, it is unchanged.
      * @return the value at the back of the list or nil if none exists.
@@ -131,6 +132,7 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
         }
 
     }
+    
     /**
      * Shows the data stored at the front of the list.
      * @return the value at the front of the list or nil if none exists.
