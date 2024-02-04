@@ -13,7 +13,7 @@ class TestStack {
 
     /**
      * Test whether push puts the new node on the top
-     * of the stack
+     * of the stack.
      */
     @Test
     // Test that pushing to a stack and peeking yields the stack node at the top
@@ -27,9 +27,9 @@ class TestStack {
 
     /**
      * Test whether pop removes the item at the top of the stack
-     * (the last node to be added)
+     * (the last node to be added).
      * Test if after popping the new item on top is the one added
-     * second to last
+     * second to last.
      */
     @Test
     // Test that pop removes the last node to be pushed
@@ -50,7 +50,7 @@ class TestStack {
 
     /**
      * Test that peek returns the last node added to the stack
-     * and null if the stack is empty
+     * and null if the stack is empty.
      */
     @Test
     // Test that peek yields the last thing first
@@ -67,7 +67,7 @@ class TestStack {
 
     /**
      * Test that isEmpty returns true when the stack is empty
-     * and false when the stack is not empty
+     * and false when the stack is not empty.
      */
     @Test
     // Test that the stack empties after pushing and popping
@@ -78,7 +78,7 @@ class TestStack {
     }
 
     /**
-     * Test that reverse puts the bottom of the stack at the top
+     * Test that reverse puts the bottom of the stack at the top.
      */
     @Test
     // Test that peeking after a reversal shows the bottom of the original stack at the top

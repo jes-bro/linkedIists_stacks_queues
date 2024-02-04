@@ -14,7 +14,7 @@ class TestDoublyLinkedList {
     /**
      * Test that the data field works as expected and that
      * the pushFront method correctly adds the new data
-     * to the head of the linked list
+     * to the head of the linked list.
      */
     @Test
     fun testPushFront() {
@@ -27,10 +27,10 @@ class TestDoublyLinkedList {
     }
 
     /**
-     * Test that pushBack stores new data at the back of the list
-     * Test that the new data becomes the data at the tail
+     * Test that pushBack stores new data at the back of the list.
+     * Test that the new data becomes the data at the tail.
      * Test that this doesn't affect the head unless there is only
-     * one node in the list
+     * one node in the list.
      */
     @Test
     fun testPushBack() {
@@ -51,8 +51,8 @@ class TestDoublyLinkedList {
 
     /**
      * Test that pop back removes the last node from the list
-     * and makes the tail the next last value
-     * Test that the correct value gets returned
+     * and makes the tail the next last value.
+     * Test that the correct value gets returned.
      */
     @Test
     fun testPopBack() {
@@ -73,8 +73,8 @@ class TestDoublyLinkedList {
 
     /**
      * Test that popFront removes the top node from the list
-     * and makes the next value in the head
-     * Test that the correct value gets returned
+     * and makes the next value in the head.
+     * Test that the correct value gets returned.
      */
     @Test
     fun testPopFront() {
@@ -96,7 +96,7 @@ class TestDoublyLinkedList {
 
     /**
      * Make sure that popFront shows the data at the head of the
-     * list but does not remove that data
+     * list but does not remove that data.
      */
     @Test
     fun testPeekFront() {
@@ -119,7 +119,7 @@ class TestDoublyLinkedList {
 
     /**
      * Make sure that popBack shows the data at the head of the
-     * list but does not remove that data
+     * list but does not remove that data.
      */
     @Test
     fun testPeekBack() {
@@ -143,9 +143,9 @@ class TestDoublyLinkedList {
 
     /**
      * Make sure that when the list is empty
-     * isEmpty returns true
+     * isEmpty returns true.
      * Make sure that when the list is not
-     * empty, isEmpty returns false
+     * empty, isEmpty returns false.
      */
     @Test
     fun testIsEmpty() {

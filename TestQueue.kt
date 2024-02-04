@@ -13,7 +13,7 @@ class TestQueue {
 
     /**
      * Test that enqueue puts keeps the first element in at the top
-     * and grows downward
+     * and grows downward.
      */
     @Test
     // Test that enqueue queues top down
@@ -25,9 +25,9 @@ class TestQueue {
 
     /**
      * Test that the first element to go into the queue
-     * will be the first out
+     * will be the first out.
      * Test that dequeue will return null if the queue
-     * is empty
+     * is empty.
      */
     @Test
     // Check that dequeue dequeues from the top
@@ -43,7 +43,7 @@ class TestQueue {
     /**
      * Test that peek shows the front of the queue
      * and that peek returns null when the queue
-     * is empty
+     * is empty.
      */
     @Test
     // Test that peek shows the front of the queue
@@ -61,7 +61,7 @@ class TestQueue {
 
     /**
      * Test that isEmpty returns true if the queue is empty
-     * and false if it is not
+     * and false if it is not.
      */
     @Test
     // Check that after queueing and dequeueing the queue is empty
