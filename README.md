@@ -2,12 +2,12 @@
 
 This repo contains my code for Data Structures and Algorithms at Olin College for Assignment 2. Included is a doubly linked list class, and a stack and queue class that leverage the doubly linked list class. I also answer some practice coding problems below. 
 
-## Practice Problems with Stacks and Queues
+# Practice Problems with Stacks and Queues
 
-### Problem 1:
+## Problem 1:
 Implemented in code. Essentially, put the stack into a queue (pop from the stack and enqueue with the queue) and dequeue from the queue to push into the stack. Queues are first in first out versus last in first out, so the order of information gets reversed when added back to the stack. 
 
-### Problem 2: 
+## Problem 2: 
 As I find open brackets, I would add them to a stack. I won't encounter a closing bracket that doesn't match the top of the stack if the string is valid. For instance: 
 
 {[]} is valid, so when I have the stack <br/> 
@@ -29,7 +29,7 @@ My stack will look like:
 and the closing bracket } will not match. 
 So if I find the first closed bracket I encounter does not match the bracket at the top of my stack, the string is invalid so I would return false. Only if the stack is empty by the end of the string would it return true. 
 
-### Problem 3: 
+## Problem 3: 
 First, I would create a stack, a queue, and another stack. <br/> 
 
 stack 1: 1, 2, 3 <br/> 
