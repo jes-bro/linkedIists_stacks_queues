@@ -35,6 +35,7 @@ class MyQueue<T> : Queue<T> {
     override fun enqueue(data: T) {
         linked_list.pushBack(data)
     }
+    
     /**
      * Remove the element at the front of the queue.  If the queue is empty, it remains unchanged.
      * @return the value at the front of the queue or nil if none exists.
@@ -42,6 +43,7 @@ class MyQueue<T> : Queue<T> {
     override fun dequeue(): T? {
         return linked_list.popFront()
     }
+    
     /**
      * Show the value at the top of the queue.
      * @return the value at the front of the queue or nil if none exists.
@@ -49,6 +51,7 @@ class MyQueue<T> : Queue<T> {
     override fun peek(): T? {
         return linked_list.peekFront()
     }
+    
     /**
      * Show whether the queue is empty or not.
      * @return true if the queue is empty and false otherwise.
