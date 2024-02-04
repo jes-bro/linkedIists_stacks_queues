@@ -48,6 +48,7 @@ class MyStack<T>: Stack<T> {
         linked_list.pushFront(data)
         size+=1
     }
+    
     /**
      * Remove the element at the top of the stack.
      * If the stack is empty, it remains unchanged.
@@ -57,6 +58,7 @@ class MyStack<T>: Stack<T> {
         size-=1
         return linked_list.popFront()
     }
+    
     /**
      * Look at the value on the top of the stack.
      * @return the value on the top of the stack or nil if none exists.
@@ -64,6 +66,7 @@ class MyStack<T>: Stack<T> {
     override fun peek(): T? {
         return linked_list.peekFront()
     }
+    
     /**
      * Check if the stack is empty.
      * @return true if the stack is empty and false otherwise.
