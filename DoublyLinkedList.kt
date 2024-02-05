@@ -62,7 +62,9 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
     internal var head: LinkedListNode<T>?=null
     // The tail of the doubly linked list
     internal var tail: LinkedListNode<T>?=null
+    // The linked list node class
     internal class LinkedListNode<T>(val data: T, var next: LinkedListNode<T>?, var prev: LinkedListNode<T>?)
+    
     /**
      * Adds the element [data] to the front of the linked list.
      * @param data The information being stored in the new head
@@ -77,6 +79,7 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
         }
         this.head = newNode
     }
+    
     /**
      * Adds the element [data] to the back of the linked list.
      * @param data The information being stored in the new tail
@@ -91,6 +94,7 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
         }
         this.tail = newNode
     }
+    
     /**
      * Removes an element from the front of the list. If the list is empty, it is unchanged.
      * @return the value at the front of the list or nil if none exists.
@@ -108,6 +112,7 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
             return value
         }
     }
+    
     /**
      * Removes an element from the back of the list. If the list is empty, it is unchanged.
      * @return the value at the back of the list or nil if none exists.
@@ -127,6 +132,7 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
         }
 
     }
+    
     /**
      * Shows the data stored at the front of the list.
      * @return the value at the front of the list or nil if none exists.
