@@ -9,7 +9,7 @@ import org.junit.Test
 import org.junit.Assert.*
 
 class TestQueue {
-    val queue = MyQueue<Int>()
+    private val queue = MyQueue<Int>()
 
     /**
      * Test that enqueue puts keeps the first element in at the top

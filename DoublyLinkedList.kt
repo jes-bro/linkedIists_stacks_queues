@@ -69,13 +69,13 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
      * linked list node.
      */
     override fun pushFront(data: T) {
-        val new_node = LinkedListNode(data = data, next = this.head, prev = null)
+        val newNode = LinkedListNode(data = data, next = this.head, prev = null)
         if (this.head == null) {
-            this.tail = new_node
+            this.tail = newNode
         } else {
-            this.head?.prev = new_node
+            this.head?.prev = newNode
         }
-        this.head = new_node
+        this.head = newNode
     }
     /**
      * Adds the element [data] to the back of the linked list.
@@ -83,13 +83,13 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
      * linked list node.
      */
     override fun pushBack(data: T) {
-        val new_node = LinkedListNode(data = data, next = null, prev = this.tail)
+        val newNode = LinkedListNode(data = data, next = null, prev = this.tail)
         if (this.head == null) {
-            head = new_node
+            head = newNode
         } else {
-            this.tail?.next = new_node
+            this.tail?.next = newNode
         }
-        this.tail = new_node
+        this.tail = newNode
     }
     /**
      * Removes an element from the front of the list. If the list is empty, it is unchanged.
@@ -116,14 +116,14 @@ class DoublyLinkedList<T>: DoublyLinkedListUniversal<T> {
         if (this.isEmpty()) {
             return null
         } else {
-            val new_last = this.tail?.prev
+            val newLast = this.tail?.prev
             if (this.tail?.prev == null) {
                 this.head = null
             }
-            val elem_at_back = this.tail?.data
-            new_last?.next = null
-            this.tail = new_last
-            return elem_at_back
+            val elemAtBack = this.tail?.data
+            newLast?.next = null
+            this.tail = newLast
+            return elemAtBack
         }
 
     }

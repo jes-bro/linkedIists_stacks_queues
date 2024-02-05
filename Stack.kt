@@ -38,14 +38,14 @@ interface Stack<T> {
  * the stack.
  */
 class MyStack<T>: Stack<T> {
-    private var linked_list = DoublyLinkedList<T>()
+    private var doublyLinkedList = DoublyLinkedList<T>()
     var size: Int = 0
     /**
      * Add [data] to the top of the stack.
      * @param data The information to be added to the stack.
      */
     override fun push(data: T) {
-        linked_list.pushFront(data)
+        doublyLinkedList.pushFront(data)
         size+=1
     }
     /**
@@ -55,41 +55,41 @@ class MyStack<T>: Stack<T> {
      */
     override fun pop(): T? {
         size-=1
-        return linked_list.popFront()
+        return doublyLinkedList.popFront()
     }
     /**
      * Look at the value on the top of the stack.
      * @return the value on the top of the stack or nil if none exists.
      */
     override fun peek(): T? {
-        return linked_list.peekFront()
+        return doublyLinkedList.peekFront()
     }
     /**
      * Check if the stack is empty.
      * @return true if the stack is empty and false otherwise.
      */
     override fun isEmpty(): Boolean {
-        return linked_list.isEmpty()
+        return doublyLinkedList.isEmpty()
     }
 
     /**
      * Reverse the order of the nodes in the stack.
      */
     fun reverse() {
-        val temp_queue: MyQueue<T> = MyQueue()
-        val overall_size: Int = size
-        for (i in 1.. overall_size) {
-            val first_in = this.pop()
+        val tempQueue: MyQueue<T> = MyQueue()
+        val overallSize: Int = size
+        for (i in 1.. overallSize) {
+            val firstIn = this.pop()
             //println(first_in)
-            if (first_in != null) {
-                temp_queue.enqueue(first_in)
+            if (firstIn != null) {
+                tempQueue.enqueue(firstIn)
             }
         }
-        for (i in 1.. overall_size) {
-            val next_item = temp_queue.dequeue()
+        for (i in 1.. overallSize) {
+            val nextItem = tempQueue.dequeue()
             //println(next_item)
-            if (next_item != null) {
-                this.push(next_item)
+            if (nextItem != null) {
+                this.push(nextItem)
             }
         }
     }
