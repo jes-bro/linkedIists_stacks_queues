@@ -74,7 +74,7 @@ class TestStack {
     fun testIsEmpty() {
         stack.push(10)
         stack.pop()
-        assertEquals("Check if isEmpty is tue", true, stack.peek())
+        assertEquals("Check if isEmpty is true", true, stack.isEmpty())
     }
 
     /**
